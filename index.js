@@ -2,6 +2,7 @@
 /* 🚀🚀🚀🤓 Task 1: 🤓🚀🚀🚀 
 Study the code below and explain in your own words why nested function can access the variable internal. */
 
+const { template } = require("@babel/core");
 const { tsConstructorType } = require("@babel/types");
 
 
@@ -62,14 +63,15 @@ const zooAnimals = [
   displayNames will be an array of strings, and each string should follow this pattern: "name: {name}, scientific: {scientific name}"
   */
 
-  function animalNames(array){
-    const bothNames = [];
-    zooAnimals.forEach(function(element){
-    return bothNames.push(element.scientific_name);
-});
-  
-  }
-  console.log('request 1:',animalNames(zooAnimals))
+    function animalNames(array){
+      const displayNames =[];
+      array.forEach(function(item){
+       
+      })
+    
+    }
+console.log(animalNames)
+
 
 
 
